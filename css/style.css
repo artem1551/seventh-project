@@ -1,0 +1,789 @@
+@font-face {
+  font-family: 'Monotype Corsiva';
+  src: url("../fonts/subset-MonotypeCorsiva.eot");
+  src: url("../fonts/subset-MonotypeCorsiva.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-MonotypeCorsiva.woff2") format("woff2"), url("../fonts/subset-MonotypeCorsiva.woff") format("woff"), url("../fonts/subset-MonotypeCorsiva.ttf") format("truetype"), url("../fonts/subset-MonotypeCorsiva.svg#MonotypeCorsiva") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Quite Chocolatey';
+  src: url("../fonts/subset-QuiteChocolatey.eot");
+  src: url("../fonts/subset-QuiteChocolatey.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-QuiteChocolatey.woff2") format("woff2"), url("../fonts/subset-QuiteChocolatey.woff") format("woff"), url("../fonts/subset-QuiteChocolatey.ttf") format("truetype"), url("../fonts/subset-QuiteChocolatey.svg#QuiteChocolatey") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Couture';
+  src: url("../fonts/subset-COUTURE-Bold.eot");
+  src: url("../fonts/subset-COUTURE-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-COUTURE-Bold.woff2") format("woff2"), url("../fonts/subset-COUTURE-Bold.woff") format("woff"), url("../fonts/subset-COUTURE-Bold.ttf") format("truetype"), url("../fonts/subset-COUTURE-Bold.svg#COUTURE-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+* {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1070px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container-header {
+  position: relative; }
+
+.header-nav {
+  display: flex;
+  justify-content: space-between; }
+
+.logo {
+  width: 145px;
+  color: #d03958;
+  font-family: "Quite Chocolatey";
+  font-size: 88px;
+  font-weight: 400;
+  line-height: 32.38px;
+  letter-spacing: -1.2px;
+  margin: 50px 0 167px 20px; }
+
+.header-bg {
+  background-color: rgba(227, 213, 184, 0.7); }
+
+.header {
+  background-image: url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto; }
+
+.menu {
+  display: flex;
+  margin-top: 54px; }
+
+.menu-link {
+  text-decoration: none;
+  width: 510px;
+  color: #1b1b1b;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 5px 15px 5px; }
+
+.menu-link:hover {
+  background-color: #d03958;
+  color: white;
+  border-radius: 4px; }
+
+.header-title {
+  width: 520px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: -1.8px;
+  color: #161616;
+  letter-spacing: -1.8px;
+  margin-bottom: 50px; }
+
+.header-title.travel {
+  color: #d03958; }
+
+.header-text {
+  width: 466px;
+  color: #161616;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  padding-bottom: 157px; }
+
+.header-title-block {
+  margin-left: 20px; }
+
+.header-register-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 400px;
+  background-color: #d03958;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -91px;
+  left: 670px; }
+
+.register-input {
+  width: 353px;
+  margin-left: 23px;
+  line-height: 50px;
+  padding: 0 20px 0;
+  font-size: 22px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  border-color: transparent; }
+
+.register-title {
+  width: 215px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.44px;
+  margin: 35px 0 40px 90px; }
+
+.register-input::placeholder {
+  width: 87px;
+  color: #b5b5b5;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.4px; }
+
+.accept-text {
+  width: 335px;
+  color: #ffffff;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.4px;
+  margin-left: 20px; }
+
+.checkbox {
+  position: relative;
+  padding-bottom: 40px; }
+
+.checkbox-fake {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: inline-block;
+  vertical-align: sub;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center;
+  margin-left: 23px; }
+
+.checkbox-field:checked + .checkbox-fake {
+  background-image: url(../images/icon-check.png); }
+
+.checkbox-field {
+  position: absolute;
+  top: 1px;
+  left: 19px;
+  opacity: 0;
+  cursor: pointer;
+  height: 20px;
+  width: 20px; }
+
+.register-link {
+  width: 70px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.44px;
+  text-decoration: none;
+  background-color: #161616;
+  padding: 20px 158px 20px 135px;
+  border-radius: 4px; }
+
+.register-link:hover {
+  background-color: #e3d5b8;
+  color: black; }
+
+.register-btn {
+  text-align: center;
+  padding-bottom: 50px; }
+
+.services-title {
+  width: 600px;
+  color: #161616;
+  font-family: 'Couture', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 30px 0 55px 10px; }
+
+.our {
+  color: #d03958; }
+
+.services-text {
+  width: 170px;
+  color: #161616;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  text-align: center; }
+
+.services-block-about {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-left: 14px; }
+
+.services-block_more {
+  margin-right: 125px;
+  margin-bottom: 64px; }
+
+.services-block_more:hover > .services-text {
+  color: #d03958; }
+
+.services-block_more:nth-child(4n) {
+  margin-right: 0; }
+
+.love {
+  margin: 0 0 45px 7px; }
+
+.tools {
+  margin: 0 0 51px 20px; }
+
+.ideas {
+  margin: 0 0 33px 25px; }
+
+.navigate {
+  margin: 0 0 38px 11px; }
+
+.story-block {
+  background-color: #d03958; }
+
+.story-container {
+  display: flex;
+  justify-content: space-between; }
+
+.story-text {
+  width: 610px;
+  color: #ffffff;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  margin: 31px 0 38px 17px; }
+
+.story-link {
+  width: 200px;
+  color: #161616;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: -0.44px;
+  text-decoration: none;
+  padding: 24px 76px 24px 65px;
+  background-color: #e3d5b8;
+  border-radius: 4px; }
+
+.story-link:hover {
+  background-color: black;
+  color: white; }
+
+.story-btn {
+  margin: 52px 0 47px; }
+
+.pricing-block {
+  background-color: #e3d5b8; }
+
+.pricing-block_more {
+  background-color: #ffffff;
+  width: 318px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.pricing-title {
+  color: #1f1f1f;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding: 50px 0 42px 0;
+  text-align: center; }
+
+.plan-title {
+  text-align: center;
+  color: #161616;
+  font-family: "PT Serif", serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.44px;
+  padding-top: 35px;
+  margin-bottom: 28px; }
+
+.pricing-title_more {
+  text-align: center;
+  color: #d03958;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+  margin-bottom: 23px; }
+
+.pricing-plan-about {
+  text-align: center;
+  color: #161616;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  margin-bottom: 39px;
+  display: flex;
+  flex-direction: column; }
+
+.pricing-link {
+  text-decoration: none;
+  width: 50px;
+  color: #161616;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: -0.44px;
+  padding: 15px 80px;
+  background-color: #e3d5b8;
+  border-radius: 4px; }
+
+.pricing-btn {
+  padding-bottom: 14px;
+  margin-left: 57px; }
+
+.pricing-link:hover {
+  background-color: #d03958;
+  color: #ffffff; }
+
+.container-pricing_about {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 14px;
+  margin-bottom: 135px; }
+
+.sign-up {
+  padding: 15px 57px; }
+
+.triagle {
+  position: relative;
+  overflow: hidden; }
+
+.text-triagle {
+  position: absolute;
+  font-family: 'PT Serif', serif;
+  font-size: 18px;
+  top: 23px;
+  left: 5px;
+  transform: rotate(-45deg); }
+
+.triagle::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 0;
+  border-color: #b4a993 transparent transparent transparent;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.clients-container {
+  display: flex;
+  justify-content: space-between; }
+
+.testimonial-block {
+  margin-bottom: 120px; }
+
+.testimonial-title {
+  width: 360px;
+  color: #1f1f1f;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-left: 83px;
+  margin-bottom: 45px; }
+
+.testimonial-clients {
+  position: relative;
+  margin-left: 23px;
+  margin-bottom: 62px; }
+
+.testimonial-text {
+  width: 345px;
+  color: #161616;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px; }
+
+.testimonial-sign {
+  display: block;
+  width: 320px;
+  color: #d03958;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  margin-top: 23px; }
+
+.testimonial-clients-foto-first {
+  position: absolute;
+  top: 4px;
+  right: -43px;
+  box-shadow: 0px -3px 18px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 50%; }
+
+.testimonial-clients-foto-second {
+  position: absolute;
+  top: 33px;
+  right: -50px;
+  box-shadow: 0px -7px 18px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 50%; }
+
+.bgc {
+  background-color: #e3d5b8;
+  border-radius: 4px;
+  margin: 0;
+  padding: 26px 75px 0 23px; }
+
+.bgc-sign {
+  padding-bottom: 25px; }
+
+.gallery-block {
+  width: 410px; }
+
+.gallery {
+  width: 230px;
+  color: #d03958;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0 0 66px 87px; }
+
+.gallery-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-bottom: 32px; }
+
+.gallery-picture {
+  margin-bottom: 28px;
+  box-shadow: 0px -7px 18px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 50%; }
+
+.gallery-link {
+  width: 240px;
+  color: #d03958;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+  margin-left: 98px;
+  padding-bottom: 117px; }
+
+.footer {
+  background-color: #161616;
+  overflow: hidden; }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; }
+
+.copyright {
+  width: 570px;
+  color: #ffffff;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  margin: 80px 0 80px 23px; }
+
+.design {
+  color: #d03958;
+  letter-spacing: -0.4px;
+  text-decoration: none;
+  margin-left: 0; }
+
+.logo-footer {
+  margin-top: 90px;
+  width: 98px;
+  color: #d03958;
+  font-family: "Quite Chocolatey";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 23.6px;
+  letter-spacing: -1.2px; }
+
+@media (max-width: 1070px) {
+  .container {
+    width: 100%; }
+
+  .header-title {
+    font-size: 44px;
+    width: calc(100% - 430px);
+    line-height: 45px;
+    margin-bottom: 20px; }
+
+  .header-text {
+    width: calc(100% - 430px); }
+
+  .header-register-block {
+    left: auto;
+    right: 20px;
+    bottom: -175px; }
+
+  .services-title {
+    font-size: 44px;
+    width: calc(100% - 430px);
+    line-height: 45px;
+    margin-left: 20px;
+    margin-bottom: 67px;
+    margin-top: 100px; }
+
+  .our {
+    margin: 0; }
+
+  .menu-link {
+    font-size: 14px; }
+
+  .logo {
+    margin-bottom: 100px; }
+
+  .services-block_more {
+    margin-right: 23px; }
+
+  .services-block-about {
+    justify-content: space-between;
+    width: calc(100% - 25px); }
+
+  .story-text {
+    width: calc(100% - 240px); }
+
+  .story-link {
+    padding: 21px;
+    margin-right: 10px; }
+
+  .pricing-block_more {
+    width: calc((95% - 25px) / 3); }
+    .pricing-block_more:last-child {
+      margin-right: 15px; }
+
+  .sign-up {
+    padding: 10px 15px; }
+
+  .pricing-btn {
+    padding-bottom: 10px;
+    margin-left: auto;
+    text-align: center; }
+
+  .try {
+    padding: 10px 40px; }
+
+  .pricing-title_more {
+    font-size: 47px;
+    margin-bottom: 0; }
+
+  .plan-title {
+    margin-bottom: 5px; }
+
+  .pricing-title {
+    padding: 20px 0; }
+
+  .container-pricing_about {
+    margin-bottom: 25px; }
+
+  .testimonial-title {
+    font-size: 44px;
+    margin-left: 15px;
+    margin-bottom: 20px; }
+
+  .testimonial-text {
+    width: 278px; }
+
+  .gallery {
+    font-size: 44px;
+    margin: 0px auto 20px; }
+
+  .gallery-picture {
+    margin-right: 32px; }
+
+  .testimonial-block {
+    margin-right: 110px;
+    margin-bottom: 50px; }
+
+  .gallery-link {
+    font-size: 16px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto; }
+
+  .gallery-img {
+    margin-bottom: 0;
+    justify-content: space-evenly; }
+
+  .logo-footer {
+    margin-right: 15px; } }
+@media (max-width: 768px) {
+  body {
+    min-width: 360px; }
+
+  .header-register-block {
+    bottom: -262px;
+    width: calc(100% - 37px); }
+
+  .logo {
+    font-size: 60px; }
+
+  .menu {
+    flex-direction: column;
+    margin-top: 30px; }
+
+  .header-text {
+    width: calc(100% - 15px); }
+
+  .header-title {
+    width: calc(100% - 20px);
+    font-size: 30px; }
+
+  .register-input {
+    width: calc(100% - 60px);
+    line-height: 35px; }
+
+  .accept-text {
+    margin-left: 0;
+    font-size: 18px; }
+
+  .register-title {
+    margin: 15px auto 15px auto; }
+
+  .register-link {
+    padding: 20px 80px; }
+
+  .register-btn {
+    padding-bottom: 35px; }
+
+  .container-header {
+    margin-bottom: 300px; }
+
+  .services-title {
+    font-size: 30px;
+    width: 90%; }
+
+  .services-block-about {
+    justify-content: center; }
+
+  .story-text {
+    width: 95%; }
+
+  .story-container {
+    position: relative; }
+
+  .story-link {
+    position: absolute;
+    left: 15px;
+    bottom: -37px;
+    text-align: center;
+    background-color: black;
+    color: white; }
+
+  .pricing-title {
+    padding-top: 40px;
+    font-size: 35px; }
+
+  .pricing-block_more {
+    width: 90%;
+    margin-bottom: 30px;
+    margin-left: 27px; }
+
+  .container-pricing_about {
+    flex-direction: column; }
+
+  .pricing-btn {
+    padding-bottom: 25px;
+    margin-left: 0;
+    text-align: center; }
+
+  .pricing-title_more {
+    font-size: 30px; }
+
+  .pricing-plan_item {
+    font-size: 20px; }
+
+  .testimonial-title {
+    font-size: 35px;
+    width: 80%;
+    line-height: 65px; }
+
+  .testimonial-block {
+    width: 80%;
+    margin-right: 0; }
+
+  .clients-container {
+    flex-direction: column; }
+
+  .testimonial-text {
+    width: calc(100% - 75px); }
+
+  .text-bgc {
+    width: 100%; }
+
+  .gallery-img {
+    width: 100%;
+    justify-content: center; }
+
+  .gallery {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    margin-left: auto; }
+
+  .gallery-picture {
+    margin-right: 20px; }
+
+  .gallery-block {
+    width: 100%; }
+
+  .copyright {
+    margin: 20px 0 20px 15px;
+    width: 50%;
+    font-size: 18px; }
+
+  .logo-footer {
+    margin-top: 47px; }
+
+  .testimonial-sign {
+    width: 100%; }
+
+  .gallery-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto; } }
+
+/*# sourceMappingURL=style.css.map */

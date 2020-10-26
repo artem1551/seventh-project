@@ -1,0 +1,243 @@
+.container-header {
+    position: relative;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 145px;
+    color: #d03958;
+    font-family: "Quite Chocolatey";
+    font-size: 88px;
+    font-weight: 400;
+    line-height: 32.38px;
+    letter-spacing: -1.2px;
+    margin: 50px 0 167px 20px;
+}
+
+.header-bg {
+    background-color: rgba(227, 213, 184, 0.7);
+}
+
+.header {
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.menu {
+    display: flex;
+    margin-top: 54px;
+}
+
+.menu-link {
+    text-decoration: none;
+    width: 510px;
+    color: #1b1b1b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding: 5px 15px 5px;
+}
+
+.menu-link:hover {
+    background-color: #d03958;
+    color: white;
+    border-radius: 4px;
+}
+
+.header-title {
+    width: 520px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: -1.8px;
+    color: #161616;
+    letter-spacing: -1.8px;
+    margin-bottom: 50px;
+}
+
+.header-title.travel {
+    color: #d03958;
+}
+
+.header-text {
+    width: 466px;
+    color: #161616;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    padding-bottom: 157px;
+}
+
+.header-title-block {
+    margin-left: 20px;
+}
+
+.header-register-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    background-color: #d03958;
+    border-radius: 4px;
+    position: absolute;
+    bottom: -91px;
+    left: 670px;
+}
+
+.register-input {
+    width: 353px;
+    margin-left: 23px;
+    line-height: 50px;
+    padding: 0 20px 0;
+    font-size: 22px;
+    margin-bottom: 16px;
+    border-radius: 3px;
+    border-color: transparent;
+}
+
+.register-title {
+    width: 215px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.44px;
+    margin: 35px 0 40px 90px;
+}
+
+.register-input::placeholder {
+    width: 87px;
+    color: #b5b5b5;
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.4px;
+}
+
+.accept-text {
+    width: 335px;
+    color: #ffffff;
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.4px;
+    margin-left: 20px;
+}
+
+.checkbox {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.checkbox-fake {
+    width: 20px;    
+    height: 20px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    display: inline-block;
+    vertical-align: sub;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center;
+    margin-left: 23px;
+}
+
+.checkbox-field:checked + .checkbox-fake {
+    background-image: url(../images/icon-check.png);
+}
+
+.checkbox-field {
+    position: absolute;
+    top: 1px;
+    left: 19px;
+    opacity: 0;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+.register-link {
+    width: 70px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.44px;
+    text-decoration: none;
+    background-color: #161616;
+    padding: 20px 158px 20px 135px;
+    border-radius: 4px;
+}
+
+.register-link:hover {
+    background-color: #e3d5b8;
+    color: black;
+}
+
+.register-btn {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.services-title {
+    width: 600px;
+    color: #161616;
+    font-family: 'Couture', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 30px 0 55px 10px;
+}
+
+.our {
+    color: #d03958;
+}
+
+.services-text {
+    width: 170px;
+    color: #161616;
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    text-align: center;
+}
+
+.services-block-about {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: 14px;
+}
+
+.services-block_more {
+    margin-right: 125px;
+    margin-bottom: 64px;
+}
+
+.services-block_more:hover > .services-text {
+    color: #d03958;
+}
+
+.services-block_more:nth-child(4n) {
+    margin-right: 0;
+}

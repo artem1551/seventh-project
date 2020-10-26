@@ -1,0 +1,181 @@
+.love {
+    margin: 0 0 45px 7px;
+}
+
+.tools {
+    margin: 0 0 51px 20px;
+}
+
+.ideas {
+    margin: 0 0 33px 25px;
+}
+
+.navigate {
+    margin: 0 0 38px 11px;
+}
+
+.story-block {
+    background-color: #d03958;
+}
+
+.story-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.story-text {
+    width: 610px;
+    color: #ffffff;
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin: 31px 0 38px 17px;
+}
+
+.story-link {
+    width: 200px;
+    color: #161616;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: -0.44px;
+    text-decoration: none;
+    padding: 24px 76px 24px 65px;
+    background-color: #e3d5b8;
+    border-radius: 4px;
+}
+
+.story-link:hover {
+    background-color: black;
+    color: white;
+}
+
+.story-btn {
+    margin: 52px 0 47px;
+}
+
+.pricing-block {
+    background-color: #e3d5b8;
+}
+
+.pricing-block_more {
+    background-color: #ffffff;
+    width: 318px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.pricing-title {
+    color: #1f1f1f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 50px 0 42px 0;
+    text-align: center;
+}
+
+.plan-title {
+    text-align: center;
+    color: #161616;
+    font-family: "PT Serif", serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.44px;
+    padding-top: 35px;
+    margin-bottom: 28px;
+}
+
+.pricing-title_more {
+    text-align: center;
+    color: #d03958;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: -1.2px;
+    margin-bottom: 23px;
+}
+
+.pricing-plan-about {
+    text-align: center;
+    color: #161616;
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin-bottom: 39px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-link {
+    text-decoration: none;
+    width: 50px;
+    color: #161616;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: -0.44px;
+    padding: 15px 80px;
+    background-color: #e3d5b8;
+    border-radius: 4px;
+}
+
+.pricing-btn {
+    padding-bottom: 14px;
+    margin-left: 57px;
+}
+
+.pricing-link:hover {
+    background-color: #d03958;
+    color: #ffffff;
+}
+
+.container-pricing_about {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 14px;
+    margin-bottom: 135px;
+}
+
+.sign-up {
+    padding: 15px 57px;
+}
+
+.triagle {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-triagle {
+    position: absolute;
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    top: 23px;
+    left: 5px;
+    transform: rotate(-45deg);
+}
+
+.triagle::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 0;
+    border-color: #b4a993 transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

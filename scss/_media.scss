@@ -1,0 +1,316 @@
+@media (max-width: 1070px) {
+    .container {
+        width: 100%;
+    }
+    
+    .header-title {
+        font-size: 44px;
+        width: calc(100% - 430px);
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .header-text {
+        width: calc(100% - 430px);
+    }
+    
+    .header-register-block {
+        left: auto;
+        right: 20px;
+        bottom: -175px;
+    }
+
+    .services-title {
+        font-size: 44px;
+        width: calc(100% - 430px);
+        line-height: 45px;
+        margin-left: 20px;
+        margin-bottom: 67px;
+        margin-top: 100px;
+    }
+
+    .our {
+        margin: 0;
+    }
+
+    .menu-link {
+        font-size: 14px;
+    }
+    
+    .logo {
+        margin-bottom: 100px;
+    }
+    
+    .services-block_more {
+        margin-right: 23px;
+    }
+
+    .services-block-about {
+        justify-content: space-between;
+        width: calc(100% - 25px);
+    }
+
+    .story-text {
+        width: calc(100% - 240px)
+    }
+
+    .story-link {
+        padding: 21px;
+        margin-right: 10px;
+    }
+
+    .pricing-block_more {
+        width: calc((95% - 25px) / 3);
+        &:last-child {
+            margin-right: 15px;
+        }
+    }
+
+    .sign-up {
+        padding: 10px 15px;
+    }
+
+    .pricing-btn {
+        padding-bottom: 10px;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .try {
+        padding: 10px 40px;
+    }
+
+    .pricing-title_more {
+        font-size: 47px;
+        margin-bottom: 0;
+    }
+
+    .plan-title {
+        margin-bottom: 5px;
+    }
+
+    .pricing-title {
+        padding: 20px 0;
+    }
+
+    .container-pricing_about {
+        margin-bottom: 25px;
+    }
+
+    .testimonial-title {
+        font-size: 44px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-text {
+        width: 278px;
+    }
+
+    .gallery {
+        font-size: 44px;
+        margin: 0px auto 20px;
+    }
+
+    .gallery-picture {
+        margin-right: 32px;
+    }
+
+    .testimonial-block {
+        margin-right: 110px;
+        margin-bottom: 50px;
+    }
+
+    .gallery-link {
+        font-size: 16px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .gallery-img {
+        margin-bottom: 0;
+        justify-content: space-evenly;
+    }
+
+    .logo-footer {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        min-width: 360px;
+    }
+
+    .header-register-block {
+        bottom: -262px;
+        width: calc(100% - 37px);
+    }
+
+    .logo {
+        font-size: 60px;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .header-text {
+        width: calc(100% - 15px);
+    }
+
+    .header-title {
+        width: calc(100% - 20px);
+        font-size: 30px;
+    }
+
+    .register-input {
+        width: calc(100% - 60px);
+        line-height: 35px;
+    }
+
+    .accept-text {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .register-title {
+        margin: 15px auto 15px auto;
+    }
+
+    .register-link {
+        padding: 20px 80px;
+    }
+
+    .register-btn {
+        padding-bottom: 35px;
+    }
+
+    .container-header {
+        margin-bottom: 300px;
+    }
+
+    .services-title {
+        font-size: 30px;
+        width: 90%;
+    }
+
+    .services-block-about {
+        justify-content: center;
+    }
+
+    .story-text {
+        width: 95%;
+    }
+
+    .story-container {
+        position: relative;
+    }
+
+    .story-link {
+        position: absolute;
+        left: 15px;
+        bottom: -37px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    .pricing-title {
+        padding-top: 40px;
+        font-size: 35px;
+    }
+
+    .pricing-block_more {
+        width: 90%;
+        margin-bottom: 30px;
+        margin-left: 27px;
+    }
+
+    .container-pricing_about {
+        flex-direction: column;
+    }
+
+    .pricing-btn {
+        padding-bottom: 25px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .pricing-title_more {
+        font-size: 30px;
+    }
+
+    .pricing-plan_item {
+        font-size: 20px;
+    }
+
+    .testimonial-title {
+        font-size: 35px;
+        width: 80%;
+        line-height: 65px;
+    }
+
+    .testimonial-block {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .clients-container {
+        flex-direction: column;
+    }
+
+    .testimonial-text {
+        width: calc(100% - 75px);
+    }
+
+    .text-bgc {
+        width: 100%;
+    }
+
+    .gallery-img {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .gallery {
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+        margin-left: auto;
+    }
+
+    .gallery-picture {
+        margin-right: 20px;
+    }
+
+    .gallery-block {
+        width: 100%;
+    }
+
+    .copyright {
+        margin: 20px 0 20px 15px;
+        width: 50%;
+        font-size: 18px;
+    }
+
+    .logo-footer {
+        margin-top: 47px;
+    }
+
+    .testimonial-sign {
+        width: 100%;
+    }
+
+    .gallery-link {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+}    
+
